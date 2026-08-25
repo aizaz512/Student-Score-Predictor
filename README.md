@@ -1,27 +1,28 @@
 # 🎓 Student Score Predictor
 
-> **Machine-learning web application for predicting student exam scores.**
+> **End-to-end machine-learning web application for predicting student exam scores.**
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Joblib](https://img.shields.io/badge/Joblib-Model%20Persistence-green)](https://joblib.readthedocs.io/)
 
 ## 🎯 Overview
 
-A beginner-friendly end-to-end ML project that trains a Linear Regression model and exposes predictions through an interactive Streamlit interface.
+Student Score Predictor demonstrates a complete beginner-to-intermediate ML workflow: preparing data, training a Linear Regression model, persisting the trained model and serving predictions through an interactive web interface.
 
 ## ✨ Features
 
 - 📊 Student score prediction
 - 🧠 Linear Regression model
 - 🧹 Data preparation
-- 🌐 Interactive web application
+- 🌐 Interactive Streamlit application
 - 💾 Saved model with Joblib
 
-## 🔄 Workflow
+## 🔄 ML Workflow
 
 ```text
-Data → Preprocess → Train Model → Save Model → Streamlit App → Prediction
+Data → Preprocess → Train Model → Evaluate → Save Model → Web App → Prediction
 ```
 
 ## 🛠️ Technology Stack
@@ -29,6 +30,18 @@ Data → Preprocess → Train Model → Save Model → Streamlit App → Predict
 Python · Pandas · NumPy · Scikit-learn · Streamlit · Joblib
 
 ## 🚀 Run Locally
+
+```bash
+git clone https://github.com/aizaz512/Student-Score-Predictor.git
+cd Student-Score-Predictor
+python -m venv .venv
+```
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
 
 Install dependencies:
 
@@ -42,11 +55,23 @@ Train the model:
 python src/train_model.py
 ```
 
-Start the app:
+Start the application:
 
 ```bash
 streamlit run app.py
 ```
+
+## 💼 Portfolio Value
+
+This project demonstrates the fundamentals of an end-to-end supervised learning application, from data preparation and model training to persistence and user-facing inference.
+
+## 🔮 Future Improvements
+
+- Add automated tests
+- Add model evaluation metrics to the UI
+- Add input validation
+- Improve model monitoring
+- Deploy the application
 
 ## 👤 Author
 
