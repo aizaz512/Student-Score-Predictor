@@ -1,35 +1,66 @@
 # 🎓 Student Score Predictor
 
-> **End-to-end machine-learning web application for predicting student exam scores.**
+> **End-to-end machine-learning application that predicts student exam scores from study-related inputs.**
 
-[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Joblib](https://img.shields.io/badge/Joblib-Model%20Persistence-green)](https://joblib.readthedocs.io/)
 
-## 🎯 Overview
+## Overview
 
-Student Score Predictor demonstrates a complete beginner-to-intermediate ML workflow: preparing data, training a Linear Regression model, persisting the trained model and serving predictions through an interactive web interface.
+Student Score Predictor demonstrates a complete supervised-learning workflow: inspect data, preprocess inputs, train a regression model, persist the trained model, and serve predictions through an interactive web interface.
 
-## ✨ Features
+## Features
 
-- 📊 Student score prediction
-- 🧠 Linear Regression model
-- 🧹 Data preparation
-- 🌐 Interactive Streamlit application
-- 💾 Saved model with Joblib
+- Student exam-score prediction
+- Linear Regression model
+- Dataset validation and preparation
+- Model persistence with Joblib
+- Interactive Streamlit interface
 
-## 🔄 ML Workflow
+## ML Workflow
 
 ```text
-Data → Preprocess → Train Model → Evaluate → Save Model → Web App → Prediction
+Dataset
+  ↓
+Validate / Preprocess
+  ↓
+Train Linear Regression
+  ↓
+Evaluate
+  ↓
+Save Model
+  ↓
+Streamlit App
+  ↓
+Prediction
 ```
 
-## 🛠️ Technology Stack
+## Repository Structure
 
-Python · Pandas · NumPy · Scikit-learn · Streamlit · Joblib
+```text
+Student-Score-Predictor/
+├── dataset/
+│   └── student_scores.csv
+├── src/
+│   ├── check_dataset.py
+│   ├── data_preprocessing.py
+│   ├── model_loader.py
+│   ├── predict.py
+│   ├── predictor.py
+│   ├── train_model.py
+│   └── utils.py
+├── app.py
+├── requirements.txt
+└── README.md
+```
 
-## 🚀 Run Locally
+## Tech Stack
+
+Python · Pandas · NumPy · scikit-learn · Streamlit · Joblib
+
+## Run Locally
 
 ```bash
 git clone https://github.com/aizaz512/Student-Score-Predictor.git
@@ -37,48 +68,39 @@ cd Student-Score-Predictor
 python -m venv .venv
 ```
 
-Windows:
+Windows PowerShell:
 
-```bash
-.venv\Scripts\activate
-```
-
-Install dependencies:
-
-```bash
+```powershell
+.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-```
-
-Train the model:
-
-```bash
 python src/train_model.py
-```
-
-Start the application:
-
-```bash
 streamlit run app.py
 ```
 
-## 💼 Portfolio Value
+## Portfolio Value
 
-This project demonstrates the fundamentals of an end-to-end supervised learning application, from data preparation and model training to persistence and user-facing inference.
+A focused demonstration of supervised ML engineering fundamentals, including data handling, training, model persistence, reusable Python modules, and user-facing inference.
 
-## 🔮 Future Improvements
+## Roadmap
 
-- Add automated tests
-- Add model evaluation metrics to the UI
-- Add input validation
-- Improve model monitoring
-- Deploy the application
+- [x] Dataset validation
+- [x] Model training
+- [x] Model persistence
+- [x] Prediction application
+- [ ] Automated tests
+- [ ] Input validation improvements
+- [ ] Evaluation metrics in UI
+- [ ] Deployment
+- [ ] Model monitoring
 
-## 👤 Author
+## Author
 
-**Aizaz Ur Rahman** — Python Developer & AI/ML Engineer
+**Sahibzada Aizaz Ur Rahman**  
+Python Developer | AI/ML Engineer
 
-[GitHub](https://github.com/aizaz512) · [All Projects](https://github.com/aizaz512?tab=repositories)
+- GitHub: https://github.com/aizaz512
+- Portfolio: https://github.com/aizaz512/sahibzada-portfolio
 
----
+## License
 
-⭐ Star the repository if you find it useful.
+MIT
